@@ -1,0 +1,230 @@
+$colorLight: #FFFFFF;
+$colorDark: #000000;
+$colorSection:#f7f4f1;
+
+.content{
+	margin:0 auto;
+	max-width: 940px;
+}
+
+@mixin button-nav{
+	font-size: 16px;
+	display:block;
+	padding:30px 20px;
+	color:white;
+}
+
+@mixin text-inform($color:$colorDark){
+	font-size: 14px;
+	color:$color;
+	line-height: 24px;
+}
+
+.button{
+	background-color:$colorDark;
+	display:block;
+	color: $colorLight;
+	padding: 15px 0;
+	font-size:14px;
+	width: 140px;
+	text-align:center;
+}
+
+
+nav{
+	background-color:$colorDark;
+	.head-menu{
+		display:flex;
+		justify-content:space-between;
+		.nav-menu{
+			li{
+				display:inline-block;
+				.btn-nav{
+					@include button-nav();
+				}
+			}
+		}
+		div:nth-of-type(2){
+			img{
+				max-width: 15px;
+				max-height: 15px;
+				margin-right:15px;
+			}
+
+			.btn-nav{
+					@include button-nav();
+			}
+			
+		}
+	}
+}
+
+.logo{
+	text-align: center;
+	img{
+		max-width: 370px;
+		margin:60px 0px 80px 0px;
+	}
+}
+
+.block-quality{
+	display:flex;
+	margin-bottom: 60px;
+	.quality{
+		@include text-inform($colorLight);
+		text-align:center;
+		padding-right:30px;
+	}
+}
+
+.info{
+	background-color:$colorSection;
+	display:flex;
+	margin-bottom: 35px;
+	.info-block{
+		padding:55px 60px 0px 85px;
+		flex:1;
+		p{
+			@include text-inform($colorDark);
+		}
+		a{
+			margin-top: 27px;
+			margin-bottom:50px;
+			display:inline-block;
+		}
+		button{
+			display:inline-block;
+			border:none;
+		}
+		button:nth-of-type(1){
+			margin-right:20px;
+		}
+		img{
+			width: 303px;
+			max-width: 303px;
+			margin-bottom: 45px;
+		}
+	}
+}
+
+
+.contacts{
+	display:flex;
+	background-color: $colorSection;
+	margin-bottom: 65px;
+	.block-contacts{
+		flex:1;
+		padding:55px 60px 50px 85px;
+		p{
+			@include text-inform($colorDark);
+		}
+
+		.contact-button{
+			a{
+				display:inline-block;
+				margin-right: 20px;
+			}
+		}
+		
+		form{
+			.flex-form{
+				margin-bottom:20px;
+			    display: flex;
+   				flex-wrap: wrap;
+    			justify-content: space-between;
+    			p{
+    				margin-left: 15px;
+    			}
+
+			}
+			input[type="text"]{
+				border:2px solid $colorDark;
+				padding:15px 0px 15px 15px;
+				max-width:130px;
+			}
+			input[type="submit"]{
+				width: 100%;
+				border:none;
+			}
+		}
+	}
+}
+
+footer{
+	background-color:#222222;
+	div{
+		display:flex;
+		flex-wrap:wrap;
+		justify-content:space-between;
+		div{
+			p{
+				@include text-inform($colorLight);
+				a{
+					text-decoration: underline;
+					@include text-inform($colorLight);
+				}
+			}
+		}
+		.container-icon{
+			display:flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content:center;
+			p{
+				@include text-inform($colorLight);
+			}
+			.icon{
+				div{
+					display:inline-block;
+					margin-right: 10px;
+					a{
+						flex-wrap:wrap;
+						min-height: 43px;
+						min-width: 43px;
+						display:flex;
+						flex-direction: column;
+						align-items: center;
+						justify-content:center;
+						background-color:$colorDark;
+					}
+				}
+			}
+		}
+
+		div:nth-of-type(3){
+				display:flex;
+				flex-wrap: wrap;
+				flex-direction: column;
+				align-items: center;
+				justify-content:center;
+		}
+	}
+}
+
+
+//Основные стили
+body{
+	background-image: url("D:/barbershop/barber/img/background.png");
+	background-repeat: no-repeat;
+	background-size: 180% 120%;
+	background-position-x:center;
+	font-family:"PT Sans - NarrowBold", "Arial", sans-serif;
+}
+
+ul{
+	padding:0;
+	margin:0;
+}
+
+li{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+h1{
+	font-size: 30px;
+}

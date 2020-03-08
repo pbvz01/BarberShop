@@ -1,0 +1,209 @@
+.content {
+  margin: 0 auto;
+  max-width: 940px;
+}
+
+.button {
+  background-color: #000000;
+  display: block;
+  color: #FFFFFF;
+  padding: 15px 0;
+  font-size: 14px;
+  width: 140px;
+  text-align: center;
+}
+
+nav {
+  background-color: #000000;
+}
+nav .head-menu {
+  display: flex;
+  justify-content: space-between;
+}
+nav .head-menu .nav-menu li {
+  display: inline-block;
+}
+nav .head-menu .nav-menu li .btn-nav {
+  font-size: 16px;
+  display: block;
+  padding: 30px 20px;
+  color: white;
+}
+nav .head-menu div:nth-of-type(2) img {
+  max-width: 15px;
+  max-height: 15px;
+  margin-right: 15px;
+}
+nav .head-menu div:nth-of-type(2) .btn-nav {
+  font-size: 16px;
+  display: block;
+  padding: 30px 20px;
+  color: white;
+}
+
+.logo {
+  text-align: center;
+}
+.logo img {
+  max-width: 370px;
+  margin: 60px 0px 80px 0px;
+}
+
+.block-quality {
+  display: flex;
+  margin-bottom: 60px;
+}
+.block-quality .quality {
+  font-size: 14px;
+  color: #FFFFFF;
+  line-height: 24px;
+  text-align: center;
+  padding-right: 30px;
+}
+
+.info {
+  background-color: #f7f4f1;
+  display: flex;
+  margin-bottom: 35px;
+}
+.info .info-block {
+  padding: 55px 60px 0px 85px;
+  flex: 1;
+}
+.info .info-block p {
+  font-size: 14px;
+  color: #000000;
+  line-height: 24px;
+}
+.info .info-block a {
+  margin-top: 27px;
+  margin-bottom: 50px;
+  display: inline-block;
+}
+.info .info-block button {
+  display: inline-block;
+  border: none;
+}
+.info .info-block button:nth-of-type(1) {
+  margin-right: 20px;
+}
+.info .info-block img {
+  width: 303px;
+  max-width: 303px;
+  margin-bottom: 45px;
+}
+
+.contacts {
+  display: flex;
+  background-color: #f7f4f1;
+  margin-bottom: 65px;
+}
+.contacts .block-contacts {
+  flex: 1;
+  padding: 55px 60px 50px 85px;
+}
+.contacts .block-contacts p {
+  font-size: 14px;
+  color: #000000;
+  line-height: 24px;
+}
+.contacts .block-contacts .contact-button a {
+  display: inline-block;
+  margin-right: 20px;
+}
+.contacts .block-contacts form .flex-form {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.contacts .block-contacts form .flex-form p {
+  margin-left: 15px;
+}
+.contacts .block-contacts form input[type=text] {
+  border: 2px solid #000000;
+  padding: 15px 0px 15px 15px;
+  max-width: 130px;
+}
+.contacts .block-contacts form input[type=submit] {
+  width: 100%;
+  border: none;
+}
+
+footer {
+  background-color: #222222;
+}
+footer div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer div div p {
+  font-size: 14px;
+  color: #FFFFFF;
+  line-height: 24px;
+}
+footer div div p a {
+  text-decoration: underline;
+  font-size: 14px;
+  color: #FFFFFF;
+  line-height: 24px;
+}
+footer div .container-icon {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+footer div .container-icon p {
+  font-size: 14px;
+  color: #FFFFFF;
+  line-height: 24px;
+}
+footer div .container-icon .icon div {
+  display: inline-block;
+  margin-right: 10px;
+}
+footer div .container-icon .icon div a {
+  flex-wrap: wrap;
+  min-height: 43px;
+  min-width: 43px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+}
+footer div div:nth-of-type(3) {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  background-image: url("D:/barbershop/barber/img/background.png");
+  background-repeat: no-repeat;
+  background-size: 180% 120%;
+  background-position-x: center;
+  font-family: "PT Sans - NarrowBold", "Arial", sans-serif;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 30px;
+}

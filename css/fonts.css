@@ -1,0 +1,15 @@
+@font-face{
+	font-family: "PT Sans - Narrow";
+	src:
+	url(D:/barbershop/barber/fonts/ptsansnarrow.woff2) format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: "PT Sans - NarrowBold";
+	src:
+	url(D:/barbershop/barber/fonts/ptsansnarrowbold.woff2) format("woff2");
+	font-style: normal;
+	font-weight: bold;
+}

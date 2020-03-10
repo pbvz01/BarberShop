@@ -7,17 +7,31 @@ $colorSection:#f7f4f1;
 	max-width: 940px;
 }
 
-@mixin button-nav{
-	font-size: 16px;
-	display:block;
-	padding:30px 20px;
-	color:white;
+.underline{
+	border-bottom: 4px solid $colorLight;
 }
+
+.logo-nav{
+	display:block;
+}
+
+.content-price-list{
+	margin:0 auto;
+	padding:0 155px;
+}
+
 
 @mixin text-inform($color:$colorDark){
 	font-size: 14px;
 	color:$color;
 	line-height: 24px;
+}
+
+.btn-nav{
+	font-size: 16px;
+	display:block;
+	padding:30px 0;
+	color:white;
 }
 
 .button{
@@ -39,9 +53,7 @@ nav{
 		.nav-menu{
 			li{
 				display:inline-block;
-				.btn-nav{
-					@include button-nav();
-				}
+				margin-right:40px;
 			}
 		}
 		div:nth-of-type(2){
@@ -49,10 +61,6 @@ nav{
 				max-width: 15px;
 				max-height: 15px;
 				margin-right:15px;
-			}
-
-			.btn-nav{
-					@include button-nav();
 			}
 			
 		}
@@ -82,6 +90,18 @@ nav{
 	display:flex;
 	margin-bottom: 35px;
 	.info-block{
+		position:relative;
+		&:nth-of-type(1)::before{
+			position: absolute;
+			content:"";
+			top:110px;
+			left:465px;
+			background-color:lightgray;
+			height: 230px;
+			width: 2px;
+			border-radius: 50%;
+    		box-shadow: -1px 0px 1px 0 lightgray;
+		}
 		padding:55px 60px 0px 85px;
 		flex:1;
 		p{
@@ -113,6 +133,18 @@ nav{
 	background-color: $colorSection;
 	margin-bottom: 65px;
 	.block-contacts{
+		&:nth-of-type(1)::before{
+			position: absolute;
+			content:"";
+			top:110px;
+			left:465px;
+			background-color:lightgray;
+			height: 230px;
+			width: 2px;
+			border-radius: 50%;
+    		box-shadow: -1px 0px 1px 0 lightgray;
+		}
+		position: relative;
 		flex:1;
 		padding:55px 60px 50px 85px;
 		p{
@@ -151,11 +183,13 @@ nav{
 }
 
 footer{
-	background-color:#222222;
+	background-image:url('../img/footer.png');
+	padding: 65px 0px 35px 0px;
 	div{
 		display:flex;
 		flex-wrap:wrap;
 		justify-content:space-between;
+		align-items:flex-start;
 		div{
 			p{
 				@include text-inform($colorLight);
@@ -191,12 +225,14 @@ footer{
 				}
 			}
 		}
-
+		div:nth-of-type(2){
+			margin-right: 120px;
+		}
 		div:nth-of-type(3){
 				display:flex;
 				flex-wrap: wrap;
 				flex-direction: column;
-				align-items: center;
+			    align-items: center;
 				justify-content:center;
 		}
 	}
@@ -205,7 +241,7 @@ footer{
 
 //Основные стили
 body{
-	background-image: url("D:/barbershop/barber/img/background.png");
+	background-image: url("../img/background.png");
 	background-repeat: no-repeat;
 	background-size: 180% 120%;
 	background-position-x:center;

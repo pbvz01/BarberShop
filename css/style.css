@@ -1,34 +1,9 @@
-.container {
-  margin: 0 auto;
-  max-width: 940px;
-}
-
-.underline {
-  border-bottom: 4px solid #FFFFFF;
-}
-
-.container-price-list {
-  margin: 0 auto;
-  padding: 0 155px;
-}
-
-.btn-nav {
-  font-size: 16px;
-  display: block;
-  padding: 30px 0;
-  color: white;
-}
-
-.button {
-  background-color: #000000;
-  display: block;
-  color: #FFFFFF;
-  padding: 15px 0;
-  font-size: 14px;
-  width: 140px;
-  text-align: center;
-}
-
+@charset "UTF-8";
+/*Смотри, сейчас все работает вроде. Попробуй изменить стили именно 
+именно в этом файле и проверить изменения. По идеии они не сработают. 
+После этого перемести импорты в низ и сохрани изменения, а вот тут
+внесенные изменения должны заработать. + Не работают стили хедер и 
+футера на второй странице*/
 nav {
   background-color: #000000;
 }
@@ -36,14 +11,37 @@ nav .head-menu {
   display: flex;
   justify-content: space-between;
 }
+nav .head-menu .nav-menu {
+  display: flex;
+  align-items: center;
+}
 nav .head-menu .nav-menu li {
-  display: inline-block;
-  margin-right: 40px;
+  margin: 0 20px;
 }
 nav .head-menu div:nth-of-type(2) img {
   max-width: 15px;
   max-height: 15px;
   margin-right: 15px;
+}
+
+.container-price-list {
+  margin: 0 auto;
+  padding: 0 155px;
+  background-color: #f7f4f1;
+}
+
+#nav-price-list {
+  color: #000000;
+}
+
+#title-price {
+  text-align: center;
+}
+#title-price h1 {
+  font-size: 48px;
+  line-height: 48px;
+  margin: 0;
+  color: black;
 }
 
 .logo {
@@ -217,12 +215,47 @@ footer div div:nth-of-type(3) {
   justify-content: center;
 }
 
-body {
+.container {
+  margin: 0 auto;
+  max-width: 940px;
+}
+
+.button {
+  background-color: #000000;
+  display: block;
+  color: #FFFFFF;
+  padding: 15px 0;
+  font-size: 14px;
+  width: 140px;
+  text-align: center;
+}
+
+.underline {
+  border-bottom: 4px solid #FFFFFF;
+}
+
+.btn-nav {
+  font-size: 16px;
+  display: block;
+  padding: 30px 0;
+  color: white;
+}
+
+.no-link {
+  pointer-events: none;
+  color: #aba9a7;
+}
+
+#bg-check {
   background-image: url("../img/background.png");
   background-repeat: no-repeat;
   background-size: 180% 120%;
   background-position-x: center;
+}
+
+body {
   font-family: "PT Sans - NarrowBold", "Arial", sans-serif;
+  color: red;
 }
 
 ul {
